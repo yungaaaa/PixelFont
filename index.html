@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <label>Text: </label>
+    <input id="input">
+    <input type="radio" checked><label>pcsterry</label>
+    <input type="radio"><label>hyperspace</label>
+    <canvas id='canvas' width="auto" ></canvas>
+    <script src="./font.js"></script>
+    <script>
+        let canvas = document.getElementById("canvas");
+        let ctx = canvas.getContext("2d");
+        let input = document.getElementById("input");
+        input.onchange = function (e) {
+            let input = e.currentTarget.value;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawFontCenter(ctx, input, 50, 8);
+        }
+    </script>
+</body>

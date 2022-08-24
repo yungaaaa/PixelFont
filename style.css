@@ -1,0 +1,8 @@
+canvas{
+    display: block;
+    border: 1px gray solid;
+    margin: 10px;
+}
+label{
+    margin: 10px;
+}

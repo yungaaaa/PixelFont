@@ -15,13 +15,17 @@
         let canvas = document.getElementById("canvas");
         let ctx = canvas.getContext("2d");
         let input = document.getElementById("input");
-       
+
+        colorArr =  Array(7).fill(getRandomColor());
         drawFontCenter(ctx, "QWERTYUIOP", 20, 5);
         drawFontCenter(ctx, "ASDFGHJKL", 70, 5);
         drawFontCenter(ctx, "ZXCVBNM", 120, 5);
+        colorArr = generateColor('#0097ff','#ff81f2');
         drawFontCenter(ctx, "0123456789", 170, 5);
+        colorArr = generateColor('#021344','#0097ff');
         drawFontCenter(ctx, ".,?!@'()/", 220, 5);
-        
+
+
         let example = document.getElementById("example");
         let ctx2 = example.getContext("2d");
         input.onchange = function (e) {

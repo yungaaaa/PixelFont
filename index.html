@@ -5,20 +5,29 @@
 </head>
 
 <body>
+    <canvas id='canvas' width="450px" height="280px"></canvas>
     <label>Text: </label>
     <input id="input">
-    <input type="radio" checked><label>pcsterry</label>
-    <input type="radio"><label>hyperspace</label>
-    <canvas id='canvas' width="auto" ></canvas>
+    <canvas id='example' width="450px" height="70px"></canvas>
+    <script src="./pressStartFont.js"></script>
     <script src="./font.js"></script>
     <script>
         let canvas = document.getElementById("canvas");
         let ctx = canvas.getContext("2d");
         let input = document.getElementById("input");
+       
+        drawFontCenter(ctx, "QWERTYUIOP", 20, 5);
+        drawFontCenter(ctx, "ASDFGHJKL", 70, 5);
+        drawFontCenter(ctx, "ZXCVBNM", 120, 5);
+        drawFontCenter(ctx, "0123456789", 170, 5);
+        drawFontCenter(ctx, ".,?!@'()/", 220, 5);
+        
+        let example = document.getElementById("example");
+        let ctx2 = example.getContext("2d");
         input.onchange = function (e) {
             let input = e.currentTarget.value;
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            drawFontCenter(ctx, input, 50, 8);
+            ctx2.clearRect(0, 0, canvas.width, canvas.height);
+            drawFontCenter(ctx2, input, 20, 5);
         }
     </script>
 </body>

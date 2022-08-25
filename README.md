@@ -1,4 +1,4 @@
-# FontJs
+# PixelFont
 
 Font Style from https://www.dafont.com/press-start-2p.font
 

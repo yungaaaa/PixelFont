@@ -1,6 +1,7 @@
 # FontJs
 
-Font Style from https://www.dafont.com/press-start-2p.font
+Font Style from https://www.dafont.com/press-start-2p.font\
+
 Reference:
 -  [PixelFont](https://github.com/PaulBGD/PixelFont)
 -  [Font.js in SystemsOffline](https://github.com/eschatonic/SystemsOffline/blob/master/font.js)
